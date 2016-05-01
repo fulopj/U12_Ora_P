@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link href="css/headers.css" rel="stylesheet" type="text/css" />
+        <link href="css/drawer.css" rel="stylesheet" type="text/css" />
+
+        <link href="css/app.css" rel="stylesheet" type="text/css" />
+        <link href="css/input_areas.css" rel="stylesheet" type="text/css" />
+        <link href="css/buttons.css" rel="stylesheet" type="text/css" />
+
+    </head>
+    <body>
+        <div>
+            <section data-type="sidebar">
+                <header>
+                    <!--<menu type="toolbar">
+                            <a href="#content"><span class="icon icon-add">add</span></a>
+                    </menu>-->
+                    <h1>Funkciók</h1>
+                </header>
+                <nav>
+                    <ul>
+                        <li id="Kategoria_Hozzaadas"><a href="#">Kategória hozzáadása</a></li>
+                        <li id="AlKategoria_Hozzaadas"><a href="#">AlKategória hozzáadása</a></li>
+                        <li id="Hol_Hozzaadas"><a href="#">Hol hozzáadása</a></li>
+                        <li id="Honnan_Hozzaadas"><a href="#">Honnan hozzáadása</a></li>
+
+                        <li id="Adatok_Exportalasa"><a href="#">Tételek Exportálása</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section id="drawer" role="region">
+                <header>
+                    <a href="#content"><span class="icon icon-menu">hide sidebar</span></a>
+                    <a href="#drawer"><span class="icon icon-menu">show sidebar</span></a>
+                    <h1>Pénztárca</h1>
+                </header>
+                <div role="main" style="overflow: scroll;">
+                    <input id="Datum" type="date" style="width: 48%;" placeholder="Dátum" value="" />
+                    <input id="Ido" type="time" style="width: 48%;" placeholder="Idő" value="" />
+
+                    <input id="Osszeg" type="number" style="width: 74%; display: inline;" placeholder="Összeg" value="" />
+                    <input id="Koltseg" type="number" style="width: 22%; display: inline;" placeholder="Ktg." value="" />
+
+                    <input id="Kategoria" type="text" style="width: 48%; display: inline;" placeholder="Kategória" value="" />
+                    <input id="AlKategoria" type="text" style="width: 48%; display: inline;" placeholder="AlKategória" value="" />
+                    <input id="Hol" type="text" placeholder="Hol" style="width: 70%; display: inline;" value="" />
+                    <button id="Kitolt" class="recommend" style="width: 25%; display: inline;">Kitölt</button>
+                    <input id="Honnan" type="text" placeholder="Honnan" value="" />
+
+                    <button id="Bevitel" class="recommend">Bevitel</button>
+                </div>
+            </section>
+        </div>
+
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>

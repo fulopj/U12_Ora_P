@@ -1,0 +1,32 @@
+{
+  "name": "Penztarca",
+  "description": "Penzkezelo alkalmazas",
+
+  "launch_path": "/index_el.html",
+
+  "icons": {
+    "512": "/img/icon-512.png",
+    "128": "/img/icon-128.png"
+  },
+
+  "developer": {
+    "name": "Fülöp József",
+    "url": "http://www.stud.u-szeged.hu/Fulop.Jozsef.1"
+  },
+
+  "default_locale": "hu", 
+
+	"type": "privileged", 
+	"permissions": {
+		"device-storage:sdcard": {
+			"access":"readwrite"
+		},
+
+		"geolocation": {
+				"description":"Obtain geolocation from the device GPS. "
+		}
+
+	},
+
+	"orientation": [ "portrait-primary" ]
+}
